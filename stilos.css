@@ -1,0 +1,127 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    width: 100%;/*lo pone el ancho de encabezado*/
+    
+    background-color: rgb(0, 0, 0, 0.3 ) ;/*color encabezado*/
+    height: 70px;/*altura del encabezado*/
+    position: fixed;
+    z-index: 10;
+}
+
+.ancho{
+    width: 80%;/*defineel ancho de logos y nav*/
+    height: 70px;/*altura de de logo y menu*/
+    /*background: darkgreen; /*color del fondo de logo y nav*/
+    margin: auto;/* lo pone al centro*/
+}
+.logo{
+    width: 30%; /*ancho de logo*/
+    height: 70px;/*altura de logo*/
+    /*background: darksalmon;/*color de fondo*/
+    float: left;/*lo pone mas a la izquierda*/
+    padding-top: 5px;/*lo aleja 10px del borde al texto o logo*/
+    box-sizing: border-box;/*ajusta al tamaño original*/
+}
+
+.logo p a{
+    font-size: 50px;
+    color: aliceblue;
+    text-decoration: none;
+    font-family: london;
+    
+}
+
+nav{
+    width: 70%;
+    height: 70px;
+    /*background-color: olive;*/
+    float: left;
+    text-align: right;
+    padding-top: 25px;
+    box-sizing: border-box;/*ajusta al tamaño original*/
+    
+}
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    /*background-color: rgb(0, 0, 0, 0.4);*/
+}
+
+.menu-horizontal >li >a{
+    display: block;
+/*padding: 2px 20px;*/
+color: rgb(255, 255, 255);
+text-decoration: none;
+font-family: london;
+text-transform: uppercase; /* convierte a mayuscula*/
+letter-spacing: 2px;
+
+}
+
+.menu-horizontal> li>a:hover{
+    /*background-color: rgb(151, 151, 151);*/
+    color: rgb(17, 11, 77);
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 100px;
+    background-color: rgba(0, 0, 0,);
+
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;/* muestra menu vertical o sub menu*/
+    background-color: rgba(255, 255, 255,);
+   
+
+
+}
+.menu-vertical li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align:left;
+    display:contents;
+    padding: 10px 10px 10px 10px;
+    font-family: london;
+
+   
+}
+
+.menu-vertical li>a:hover{
+    color: rgba(0, 225, 255, 0.829);
+}
+
+
+
+
+@font-face {
+    font-family:london;
+    src: url(fuentes/london.otf);
+}
+@font-face {
+    font-family: aston ;
+    src: url(fuentes/aston.ttf);
+
+}
+@font-face {
+    font-family:Huglo;
+    src: url(fuentes/Huglo.otf);
+}
+#mu-map {
+    display: inline;
+    float: left;
+    height: 450px;
+    width: 100%;
+  }
+  
+  #mu-map iframe {
+    width: 100%;
+    height: 100%;
+  }
